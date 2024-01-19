@@ -39,7 +39,7 @@
           <tr v-for="post in pagedPosts" :key="post.id">
             <td>{{ post.id }}</td>
             <th>
-              <a href="">{{ post.title }}</a>
+              <a :href="'/posts/' + post.id">{{ post.title }}</a>
             </th>
             <td>{{ post.UserId }}</td>
             <td>{{ formatDate(post.createdAt) }}</td>

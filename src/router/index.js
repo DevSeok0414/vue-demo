@@ -8,6 +8,11 @@ const routes = [
     alias: ['/', '/movies'],
     name: "posts",
     component: Posts,
+  },
+  {
+    path: "/test",
+    name: "test",
+    component: Main
   }
 ];
 
